@@ -1,15 +1,7 @@
-doctype html
-html
-    head
-        title My CV online
-        meta(name="description", content="This is an online version of my CV")
-    body
-        header
-            h1 Bogdan Negura
-            h3 Junior Front-End Developer
-        nav
-            a(href="/") Home
-            a(href="/about-me.pug") About Me
-            a(href="/skills.pug") Skills
-            a(href="/experience.pug") Experience
-            a(href="/clients.pug") Clients
+extend _component/layout/template
+
+block awesome-content
+    img(src="asset/image/me.jpg")
+    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque dui magna, vel lacinia magna mattis a. Orci varius natoque penatibus et magnis dis parturient.
+    a(href="/about-me.pug") Read More
+
