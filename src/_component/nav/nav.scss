@@ -4,6 +4,10 @@ nav {
     border: 1.5px solid red;
     background-color: #35424a;
     min-height: 40px;
+    a:hover { 
+        opacity: .2;
+        color: #18FB20;
+    }
 }
 
 a {
@@ -15,7 +19,7 @@ a {
     color: #ffffff; 
 }
 
-header {
+header:hover {
     background-color: #dadadd;
 
 }
@@ -30,3 +34,4 @@ header h3 {
     text-align: center;
 
 }
+
