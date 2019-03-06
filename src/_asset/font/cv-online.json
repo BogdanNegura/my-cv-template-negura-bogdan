@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "name": "CV online",
+    "name": "cv-online",
     "lastOpened": 1418773394855,
     "created": 1551856209519
   },
@@ -10490,14 +10490,18 @@
     "fontPref": {
       "prefix": "icon-",
       "metadata": {
-        "fontFamily": "icomoon"
+        "fontFamily": "icomoon",
+        "majorVersion": 1,
+        "minorVersion": 0
       },
       "metrics": {
         "emSize": 1024,
         "baseline": 6.25,
         "whitespace": 50
       },
-      "embed": false
+      "embed": false,
+      "noie8": true,
+      "ie7": false
     },
     "imagePref": {
       "prefix": "icon-",
