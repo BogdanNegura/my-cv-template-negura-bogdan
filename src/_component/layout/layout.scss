@@ -7,15 +7,20 @@ html, body {
 * {
     box-sizing: border-box;
 }
+
+
 body {
     display: grid;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
 header {
     background-image: url(http://lorempixel.com/g/900/350/);
     background-size: cover;
 }
+
 
 header:hover {
     background-color: #dadadd;
@@ -39,6 +44,7 @@ header h3 {
 
 article {
     padding: 15px;
+    background-color: #E3E3E3;
 
     p {
         margin: 15px 0;
