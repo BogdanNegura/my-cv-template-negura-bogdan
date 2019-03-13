@@ -1,5 +1,5 @@
 @import "reset.scss";
-// @import '_component/nav/nav';
+@import "_component/font/icon-font";
 
 html, body {
     height: 100%;
@@ -17,17 +17,15 @@ body {
 }
 
 header {
-    // grid-row: 1/2;
-    // grid-column: 1/2;
-    background-color: blue;
-    // background-image: url(http://lorempixel.com/1200/800/);
-    height: 100px;
+    // background-color: blue;
+    background-image: url(http://lorempixel.com/1200/800/);
+    height: 150px; 
     justify-content: center;
     
 
     h1, h3 {
          font-size: 30px;
-        //  color: white;
+         color: white;
          font-style: inherit;
         //  margin: 15px;
          padding: 10px;
@@ -36,17 +34,14 @@ header {
 }
 
 nav {
-    // grid-row: 2/3;
-    // grid-column: 1/2;
     background-color: #424241;
     height: 42px;
     text-align: center;
-    // border: 2px solid red;
     a {
         text-decoration: none;
         color: white;
         font-size: 1rem;
-        padding: 0 15px;
+        padding: 0 20px;
         display: inline-block;
         margin-top: 10px;
         align-content: center;
@@ -55,9 +50,11 @@ nav {
 }
 
 article {
-    // grid-row: 3/4;
-    // grid-column: 1/2;
-    background-color: #6E6E6E;
+    display: flex;
+    
+    // background-color: #6E6E6E;
+    background-image: url(http://lorempixel.com/1200/800/);
+
     height: 220px;
     padding: 2rem;
     min-height: 100%;
@@ -71,5 +68,5 @@ footer {
     background-color: #2222;
     display: flex;
     justify-content: center;
-    // border: 2px solid red;
+    height: 80px;;
 }
