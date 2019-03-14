@@ -1,7 +1,49 @@
-footer
-    div &copy; 2019 My awesome CV online
-    ul 
-        li
-            a(href="/privacy") Privacy
-        li    
-            a(href="/policy") Policy
+-
+    var socialList = [
+        {
+            "icon": "facebook2",
+            "url": "https://www.facebook.com/"
+        },
+        {
+            "icon": "twitter",
+            "url": "https://www.twitter.com/"
+        },
+        {
+            "icon": "facebook2",
+            "url": "https://www.youtube.com/"
+        },
+        {
+            "icon": "skype",
+            "url": "https://www.skype.com/"
+        },
+    ]
+
+    
+.footer
+    div &copy; 2019 By Bogdan N
+    ul.footer__list
+        li 
+            a.footer__link(href="/privacy") Privacy
+        li 
+            a.footer__link(href="/terms") Terms
+
+    ul.footer__social
+        each social in socialList
+            li.footer__item
+                label.footer__label(for="")
+                    span(class=`cv-online__icon--${social.icon}`)
+        each social in socialList
+            a.footer__links(href=social.url)=social.url            
+
+        
+
+
+
+
+//- footer
+//-     div &copy; 2019 My awesome CV online
+//-     ul 
+//-         li
+//-             a(href="/privacy") Privacy
+//-         li    
+//-             a(href="/policy") Policy
