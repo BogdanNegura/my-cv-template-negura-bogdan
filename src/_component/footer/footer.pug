@@ -1,4 +1,5 @@
 -
+    var footerTitle = "Follow Me";
     var socialList = [
         {
             "icon": "facebook2",
@@ -18,7 +19,7 @@
         },
     ]
 
-    
+
 .footer
     div &copy; 2019 By Bogdan N
     ul.footer__list
@@ -26,14 +27,17 @@
             a.footer__link(href="/privacy") Privacy
         li 
             a.footer__link(href="/terms") Terms
-
-    ul.footer__social
-        each social in socialList
-            li.footer__item
-                label.footer__label(for="")
-                    span(class=`cv-online__icon--${social.icon}`)
-        each social in socialList
-            a.footer__links(href=social.url)=social.url            
+    .footer__title=footerTitle
+        ul.footer__social
+            each social, key in socialList
+                li.footer__item
+                    label.footer__label(for=`message-box-id-${key}`)
+                        span(class=`cv-online__icon--${social.icon}`)
+        .footer__box-body
+            each social, key in socialList
+                input.footer__box-radio(type="radio", name="cool-radio", id=`message-box-id-${key}`)
+                .footer__box-message
+                a.footer__links(href=social.url, target="_blank")=social.url            
 
         
 

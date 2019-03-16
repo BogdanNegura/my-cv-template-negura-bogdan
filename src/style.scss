@@ -1,5 +1,6 @@
 @import "reset.scss";
 @import "_component/font/icon-font";
+@import "_component/footer/footer";
 
 html, body {
     height: 100%;
@@ -62,11 +63,3 @@ article {
     
 }
 
-footer {
-    grid-row: 5/6;
-    grid-column: 1/2;
-    background-color: #2222;
-    display: flex;
-    justify-content: center;
-    height: 80px;;
-}
