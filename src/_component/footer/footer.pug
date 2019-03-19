@@ -1,5 +1,6 @@
 -
-    var footerTitle = "Follow Me";
+    //- var titleCopy = ;
+    var footerTitle = "Follow me";
     var socialList = [
         {
             "icon": "facebook2",
@@ -10,7 +11,7 @@
             "url": "https://www.twitter.com/"
         },
         {
-            "icon": "facebook2",
+            "icon": "youtube",
             "url": "https://www.youtube.com/"
         },
         {
@@ -21,23 +22,28 @@
 
 
 .footer
-    div &copy; 2019 By Bogdan N
+    div &copy; by Bogdan N
     ul.footer__list
         li 
-            a.footer__link(href="/privacy") Privacy
+            a.footer__link(href="/privacy" title="Privacy") Privacy
         li 
-            a.footer__link(href="/terms") Terms
+            a.footer__link(href="/terms" title="Terms") Terms
     .footer__title=footerTitle
         ul.footer__social
             each social, key in socialList
                 li.footer__item
                     label.footer__label(for=`message-box-id-${key}`)
                         span(class=`cv-online__icon--${social.icon}`)
+                        
         .footer__box-body
             each social, key in socialList
                 input.footer__box-radio(type="radio", name="cool-radio", id=`message-box-id-${key}`)
                 .footer__box-message
-                a.footer__links(href=social.url, target="_blank")=social.url            
+                    a.footer__links(href=social.url, target="_blank")=social.url
+            .footer__box-reset
+                input(type="radio", name="cool-radio", id="footer__box-reset" 
+                )
+                label.footer__box-reset-label(for="footer__box-reset", title="inchide-ma bine!") x            
 
         
 

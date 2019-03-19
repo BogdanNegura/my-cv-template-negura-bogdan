@@ -1,5 +1,9 @@
 .footer {
-    background-color: #2222;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3) 0,
+        rgba(0, 0, 0, 1)  50%   
+    )   ;
     display: flex;
     justify-content: center;
     height: 80px;
@@ -12,12 +16,45 @@ ul.footer{
 
 .footer__social {
     font-size: 1.5rem;
-    color: black;
+    // color: black;
     display: flex;
+    // color: white;
     // flex-direction: row;
 
 }
 
-.footer__box-body {
-    
+.footer__box-message,
+.footer__box-radio, 
+#footer__box-reset {
+    display: none;
+
 }
+
+.footer__box-reset-label {
+    cursor: pointer;
+}
+
+.footer__box-reset {
+    padding: 0.3rem;
+    display: inline;
+}
+
+.footer__box-radio:checked + .footer__box-message {
+    display: block;
+
+
+}
+
+a.footer__link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer__title {
+    color: white;
+}
+
+.footer div {
+    color: white;
+}
+
