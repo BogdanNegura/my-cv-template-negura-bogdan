@@ -7,11 +7,36 @@ block config
 
 
 block content
-    h1 adadaaa
-    p adadaaada
-    h1 adadaaa
-    p adadaaada
-    h1 adadaaa
-    p adadaaada
-    h1 adadaaa
-    p adadaaada
+    -
+        var header = '#What i can do'
+        var knoledgeList = [
+            {
+                title: 'Front End',
+                skillList: [
+                    'HTML5',
+                    'CSS3',
+                    'JavaScript',
+                    'Bootstrap 4',
+                    'Gulp',
+                    'Sass',
+                    'Angular',
+                ],
+            },
+            {
+                title: 'Back End',
+                skillList: [
+                    'Git',
+                    'Node.js',
+                    'JSON',
+                ],
+            },
+        ]
+    
+    #knoledge
+    .knoledge
+        .knoledge__header=header
+        each knoledge in knoledgeList
+            .knoledge__title=knoledge.title
+            .knoledge__list
+                each skill in knoledge.skillList
+                    .knoledge__skill=skill

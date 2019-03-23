@@ -1,6 +1,9 @@
 @import "reset.scss";
 @import "_component/font/icon-font";
 @import "_component/footer/footer";
+@import "_component/config/colors";
+@import "_component/config/common";
+@import "about-me/about-me";
 
 html, body {
     height: 100%;
@@ -15,7 +18,8 @@ body {
     grid-template-rows: auto auto 1fr auto;
     
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(http://lorempixel.com/1200/800/);
+    // background-image: url(http://lorempixel.com/1200/800/);
+    background-color: $color-loafer;
     background-size: cover;
     background-position: center center  ;
 }
@@ -37,7 +41,7 @@ header {
 }
 
 nav {
-    background-color: #424241;
+    background-color: $color-catalina-blue;
     height: 42px;
     text-align: center;
     a {

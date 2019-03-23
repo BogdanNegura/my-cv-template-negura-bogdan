@@ -1,0 +1,23 @@
+.about-me {
+    display: flex;
+    // background-image: radial-gradient(
+    //     ellipse, 
+    //     $color-pastel-green, 
+    //     $color-algae-green
+    // );
+}
+
+.about-me__header {
+    @extend %header;
+}
+
+.about-me__avatar {
+    height: 250px;
+    border-radius: 100%;
+    
+}
+
+.about-me__details {
+    font-size: 1.4rem;
+}
+
