@@ -1,5 +1,7 @@
 .about-me {
+
     display: flex;
+    width: 100%;
     // background-image: radial-gradient(
     //     ellipse, 
     //     $color-pastel-green, 
@@ -13,11 +15,18 @@
 
 .about-me__avatar {
     height: 250px;
-    border-radius: 100%;
+    border-radius: 15%;
+    border: 0.5rem solid $color-catalina-blue;
     
+}
+
+
+.about-me__avatar-wrapper {
 }
 
 .about-me__details {
     font-size: 1.4rem;
+    padding: 10rem 10rem;
+    
 }
 
