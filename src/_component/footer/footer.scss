@@ -11,7 +11,8 @@
     // flex-direction: row;
 }
 
-ul.footer{
+ul.footer__list {
+    padding-top: 1rem;
 }
 
 .footer__social {
@@ -46,15 +47,19 @@ ul.footer{
 }
 
 a.footer__link {
-    color: white;
+    color: #882812;
     text-decoration: none;
+    padding: 5rem;
 }
 
 .footer__title {
-    color: white;
+    color: #882812;
+    padding-top: 1rem;
 }
 
 .footer div {
-    color: white;
+    color: #882812;
+    padding-top: 1rem;
+
 }
 

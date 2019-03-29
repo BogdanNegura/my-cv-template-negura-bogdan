@@ -20,7 +20,12 @@ body {
     
     font-family: Arial, Helvetica, sans-serif;
     // background-image: url(http://lorempixel.com/1200/800/);
-    background-color: $color-loafer;
+    // background-color: $color-pastel-green;
+    background-image: radial-gradient(
+        ellipse, 
+        $color-loafer, 
+        $color-lochinvar
+    );
     background-size: cover;
     background-position: center center  ;
 }
